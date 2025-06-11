@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="327" height="401" viewBox="0 0 327 401">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_378415" data-name="Rectángulo 378415" width="327" height="401" rx="20" transform="translate(-24522.496 -5724)" fill="#d4fefa"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectángulo_401123" data-name="Rectángulo 401123" width="201.123" height="201.123" fill="#6cdfd4"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectángulo_378459" data-name="Rectángulo 378459" width="327" height="401" rx="20" transform="translate(284.668 5976)" fill="#d4fefa"/>
+    </clipPath>
+  </defs>
+  <g id="imgtar" transform="translate(-284.668 -5976)">
+    <g id="Enmascarar_grupo_1073331" data-name="Enmascarar grupo 1073331" transform="translate(24807.164 11700)" clip-path="url(#clip-path)">
+      <path id="Trazado_873831" data-name="Trazado 873831" d="M20,0H347a20,20,0,0,1,20,20V429a20,20,0,0,1-20,20H20A20,20,0,0,1,0,429V20A20,20,0,0,1,20,0Z" transform="translate(-24542.496 -5748)" fill="#d4fefa"/>
+      <g id="Grupo_1099591" data-name="Grupo 1099591" transform="translate(-24529.172 -5724)" opacity="0.21">
+        <g id="Grupo_1099469" data-name="Grupo 1099469" transform="translate(-52 -55.947)" clip-path="url(#clip-path-2)">
+          <path id="Trazado_873497" data-name="Trazado 873497" d="M100.562,201.123A100.584,100.584,0,0,1,61.414,7.909a100.583,100.583,0,0,1,78.3,185.3,99.951,99.951,0,0,1-39.149,7.91m0-166.2A65.638,65.638,0,1,0,166.2,100.561a65.712,65.712,0,0,0-65.638-65.638" transform="translate(0 0.001)" fill="#6cdfd4"/>
+        </g>
+      </g>
+      <line id="Línea_3225" data-name="Línea 3225" y1="93.923" x2="93.923" transform="translate(-24365.996 -5682)" fill="none" stroke="#bdf7f1" stroke-linecap="round" stroke-miterlimit="10" stroke-width="34.595"/>
+      <line id="Línea_3226" data-name="Línea 3226" y1="93.923" x2="93.923" transform="translate(-24284.699 -5692)" fill="none" stroke="#bdf7f1" stroke-linecap="round" stroke-miterlimit="10" stroke-width="34.595"/>
+    </g>
+  </g>
+</svg>
