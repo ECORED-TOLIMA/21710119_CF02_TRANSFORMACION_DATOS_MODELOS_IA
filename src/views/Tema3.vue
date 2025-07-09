@@ -13,7 +13,7 @@
 
       .col-lg-9
         p La integración de datos consiste en combinar información proveniente de diversas fuentes heterogéneas en un conjunto de datos unificado y coherente. Este proceso busca ofrecer una visión completa y consistente de la información para su análisis y posterior explotación en modelos de inteligencia artificial o sistemas de apoyo a decisiones. Una de las tareas fundamentales en la integración es resolver las discrepancias en los nombres de atributos, estructuras y dimensiones, evitando duplicidades y conflictos que puedan comprometer la calidad del conjunto final (Wang, 2017).
-        p Las herramientas ETL (Extract, Transform, Load) y ELT (Extract, Load, Transform) son estrategias ampliamente utilizadas en los procesos de integración. En el enfoque ETL, los datos son extraídos de sus fuentes, transformados para adecuarlos a los requisitos de destino “lo que puede incluir tareas de limpieza, normalización, enriquecimiento y catalogación” y, posteriormente, cargados en un repositorio, como un #[i Data Warehouse] o un #[i Data Lake]. En cambio, el enfoque ELT invierte parte del proceso: los datos son primero extraídos y cargados en el destino para luego ser transformados, aprovechando las capacidades de procesamiento de los sistemas modernos (Elgendy, 2014).
+        p Las herramientas ETL (Extract, Transform, Load) y ELT (Extract, Load, Transform) son estrategias ampliamente utilizadas en los procesos de integración. En el enfoque ETL, los datos son extraídos de sus fuentes, transformados para adecuarlos a los requisitos de destino “lo que puede incluir tareas de limpieza, normalización, enriquecimiento y catalogación” y, posteriormente, cargados en un repositorio, como un #[i data warehouse] o un #[i data lake]. En cambio, el enfoque ELT invierte parte del proceso: los datos son primero extraídos y cargados en el destino para luego ser transformados, aprovechando las capacidades de procesamiento de los sistemas modernos (Elgendy, 2014).
     p.mb-4 La integración de datos también puede incorporar técnicas como la reconciliación de entidades (#[i entity resolution]), el mapeo semántico y el uso de #[i middlewares] o plataformas de integración, como los #[i Enterprise Service Bus] (ESB) o los sistemas basados en API. Estos enfoques permiten gestionar no solo bases de datos estructuradas, sino también fuentes de datos semiestructuradas o no estructuradas.
 
     .bloque-texto-g.bloque-texto-g--inverso.color-primario.p-3.p-sm-4.p-md-5.mb-5(data-aos="fade-right").mb-5
@@ -21,13 +21,13 @@
         :style="{'background-image':`url(${require('@/assets/curso/temas/tema3/img2.png')})`}"
       )
       .bloque-texto-g__texto.p-4
-        p.mb-0 El almacenamiento de los datos integrados depende de las necesidades específicas del proyecto y puede organizarse en estructuras tradicionales como bases de datos relacionales, en almacenes optimizados para el análisis (#[i Data Warehouses]) o en repositorios flexibles diseñados para manejar grandes volúmenes y variedad de datos (#[i Data Lakes]). La elección adecuada de la estrategia de almacenamiento resulta crucial para garantizar que los datos puedan ser accedidos, consultados y procesados de manera eficiente y segura.
+        p.mb-0 El almacenamiento de los datos integrados depende de las necesidades específicas del proyecto y puede organizarse en estructuras tradicionales como bases de datos relacionales, en almacenes optimizados para el análisis (#[i data warehouses]) o en repositorios flexibles diseñados para manejar grandes volúmenes y variedad de datos (#[i data lakes]). La elección adecuada de la estrategia de almacenamiento resulta crucial para garantizar que los datos puedan ser accedidos, consultados y procesados de manera eficiente y segura.
     p En definitiva, la integración y almacenamiento de datos constituyen pasos estratégicos que aseguran la disponibilidad de información fiable, consistente y de calidad para su posterior análisis, modelado y toma de decisiones basada en datos.
 
     separador
     #t_3_1.titulo-segundo.color-acento-contenido(data-aos="flip-up")
       h2 3.1 Proceso ETL
-    p.mb-5 El proceso ETL (extracción, transformación y carga) constituye un componente esencial en el tratamiento de grandes volúmenes de datos y en la construcción de #[i Data Warehouses]. Según Almeida (2013), este proceso se compone de tres etapas principales que operan de forma secuencial:
+    p.mb-5 El proceso ETL (extracción, transformación y carga) constituye un componente esencial en el tratamiento de grandes volúmenes de datos y en la construcción de #[i data warehouses]. Según Almeida (2013), este proceso se compone de tres etapas principales que operan de forma secuencial:
     .row.justify-content-center.align-items-center.mb-3
       .col-lg-10
         LineaTiempoD.color-acento-botones
@@ -39,12 +39,12 @@
                 img(src='@/assets/curso/temas/tema3/img3.png', alt='Texto que describa la imagen')
           .row(numero="B" titulo="Transformación").p-3
             .col-md-12.mb-4.mb-md-0
-              p Una vez extraídos los datos, estos se someten a una serie de rutinas de transformación que los adaptan, corrigen y estructuran para que sean compatibles con el esquema del #[i Data Warehouse]. Esta etapa contempla diversas operaciones, como reformatear atributos, recalcular valores, modificar estructuras clave, agregar elementos temporales, asignar valores por defecto, seleccionar información relevante y consolidar datos dispersos. Durante la transformación, también se aplican procesos de limpieza de datos para corregir errores, inconsistencias y valores atípicos. Esto puede implicar traducir esquemas, filtrar información no deseada, agregar datos resumidos o utilizar herramientas de limpieza especializadas. La transformación no solo prepara los datos para su almacenamiento, sino que también garantiza su calidad y uniformidad.
+              p Una vez extraídos los datos, estos se someten a una serie de rutinas de transformación que los adaptan, corrigen y estructuran para que sean compatibles con el esquema del #[i data warehouse]. Esta etapa contempla diversas operaciones, como reformatear atributos, recalcular valores, modificar estructuras clave, agregar elementos temporales, asignar valores por defecto, seleccionar información relevante y consolidar datos dispersos. Durante la transformación, también se aplican procesos de limpieza de datos para corregir errores, inconsistencias y valores atípicos. Esto puede implicar traducir esquemas, filtrar información no deseada, agregar datos resumidos o utilizar herramientas de limpieza especializadas. La transformación no solo prepara los datos para su almacenamiento, sino que también garantiza su calidad y uniformidad.
               figure
                 img(src='@/assets/curso/temas/tema3/img4.png', alt='Texto que describa la imagen')
           .row(numero="C" titulo="Carga").p-3
             .col-md-12.mb-4.mb-md-0
-              p Representa la etapa final del proceso ETL y tiene como objetivo incorporar los datos transformados en el repositorio de destino, generalmente un #[i Data Warehouse]. Uno de los principales retos durante esta fase es identificar correctamente los datos nuevos y los actualizados, para evitar duplicaciones o pérdidas de información. Los registros se clasifican entre filas nuevas, que deben insertarse, y filas existentes, que requieren actualización. Muchas herramientas ETL modernas facilitan esta tarea mediante predicados de lenguaje o reglas de integración específicas. Durante la carga, también se gestionan aspectos técnicos como los segmentos de #[i rollback] y los archivos de registro, para mantener la integridad de los datos ante posibles fallos o interrupciones. Habitualmente, antes de su carga definitiva en el #[i Data Warehouse], los datos pasan por un área de #[i staging], donde se realizan validaciones finales y preparaciones específicas.
+              p Representa la etapa final del proceso ETL y tiene como objetivo incorporar los datos transformados en el repositorio de destino, generalmente un #[i data warehouse]. Uno de los principales retos durante esta fase es identificar correctamente los datos nuevos y los actualizados, para evitar duplicaciones o pérdidas de información. Los registros se clasifican entre filas nuevas, que deben insertarse, y filas existentes, que requieren actualización. Muchas herramientas ETL modernas facilitan esta tarea mediante predicados de lenguaje o reglas de integración específicas. Durante la carga, también se gestionan aspectos técnicos como los segmentos de #[i rollback] y los archivos de registro, para mantener la integridad de los datos ante posibles fallos o interrupciones. Habitualmente, antes de su carga definitiva en el #[i data warehouse], los datos pasan por un área de #[i staging], donde se realizan validaciones finales y preparaciones específicas.
               figure
                 img(src='@/assets/curso/temas/tema3/img5.png', alt='Texto que describa la imagen')
     separador
@@ -58,7 +58,7 @@
       .col-lg-7
         .cajon.color-primario.p-4.mb-4
           p El aprendizaje automático se define como un subcampo de la informática que se centra en el diseño y desarrollo de algoritmos capaces de aprender patrones a partir de datos, sin necesidad de ser programados de manera explícita (Maltby, 2011). Para que los modelos de aprendizaje automático sean efectivos, precisos y logren generalizar adecuadamente a datos no vistos, resulta esencial realizar una preparación cuidadosa de los datos.
-        p El objetivo principal de la preparación de datos es facilitar el trabajo de los algoritmos de modelado, eliminando inconsistencias, reduciendo el ruido y destacando la información relevante. Este proceso implica la aplicación de diversas metodologías y técnicas, como Data Assay, PIE (#[i Prepared Information Environment]), PIE-O (#[i Prepared Information Environment Output]) y métodos de consistencia de datos, ya abordados en este programa de formación complementaria.
+        p El objetivo principal de la preparación de datos es facilitar el trabajo de los algoritmos de modelado, eliminando inconsistencias, reduciendo el ruido y destacando la información relevante. Este proceso implica la aplicación de diversas metodologías y técnicas, como #[i data assay], PIE (Prepared Information Environment), PIE-O (Prepared Information Environment Output) y métodos de consistencia de datos, ya abordados en este programa de formación complementaria.
     p La preparación de datos es un proceso meticuloso que incluye comprender a fondo las características del conjunto de datos, evaluar su calidad, aplicar transformaciones específicas que se adecuen al algoritmo de modelado seleccionado y garantizar la coherencia en todos los subconjuntos de datos (entrenamiento, validación y prueba). El resultado esperado es obtener datos limpios, relevantes y en un formato óptimo para el desarrollo de modelos predictivos sólidos.
     p.mb-4 En términos generales, la preparación de datos para el aprendizaje automático sigue los siguientes pasos:
     .row.justify-content-center.align-items-center.mb-5
@@ -75,7 +75,7 @@
               .col-6
                 img(src='@/assets/curso/temas/tema3/img11.svg' alt='AvatarTop')
             h5.text-center 2. Transformación de variables
-            p Normalización o estandarización de datos numéricos, codificación de variables categóricas (por ejemplo, mediante codificación one-hot o label encoding) y transformación de fechas o textos según sea necesario.
+            p Normalización o estandarización de datos numéricos, codificación de variables categóricas (por ejemplo, mediante codificación #[i one-hot] o #[i label encoding]) y transformación de fechas o textos según sea necesario.
           .tarjeta.tarjeta--BG01.color-primario.p-4
             .row.justify-content-center.mb-3
               .col-6
@@ -87,7 +87,7 @@
               .col-6
                 img(src='@/assets/curso/temas/tema3/img7.svg' alt='AvatarTop')
             h5.text-center 4. Balanceo de clases
-            p En problemas de clasificación, aplicación de técnicas como sobremuestreo (oversampling) o submuestreo (undersampling) para equilibrar las clases y evitar sesgos en los modelos.
+            p En problemas de clasificación, aplicación de técnicas como sobremuestreo (#[i oversampling]) o submuestreo (#[i undersampling]) para equilibrar las clases y evitar sesgos en los modelos.
           .tarjeta.tarjeta--BG01.color-primario.p-4
             .row.justify-content-center.mb-3
               .col-6
@@ -98,7 +98,7 @@
             .row.justify-content-center.mb-3
               .col-6
                 img(src='@/assets/curso/temas/tema3/img9.svg' alt='AvatarTop')
-            h5.text-center 6. Aumento de datos (#[i Data Augmentation])
+            h5.text-center 6. Aumento de datos (#[i data augmentation])
             p En algunos casos, especialmente en datos de imágenes o texto, generación de nuevas muestras a partir de variaciones de las existentes para mejorar la robustez del modelo.
   
 
@@ -156,7 +156,7 @@
                 figure
                   img(src='@/assets/curso/temas/tema3/img18.png', alt='Texto que describa la imagen')
               .col-md-6.mb-4.mb-md-0
-                h4 Ajuste de hiperparámetros (#[i Hyperparameter Tuning])
+                h4 Ajuste de hiperparámetros (#[i hyperparameter tuning])
                 p Optimizar configuraciones como la tasa de aprendizaje, la profundidad de árboles o el número de capas en redes neuronales, con el fin de maximizar el rendimiento del modelo.
     p Posteriormente, es posible incorporar técnicas de automatización, como el AutoML, que permiten automatizar fases específicas del diseño, tales como la selección de modelos, el ajuste de hiperparámetros y la evaluación, acelerando el proceso de desarrollo de soluciones de IA.
     p A pesar de la existencia de herramientas que automatizan muchas de estas etapas, la intervención y supervisión de expertos sigue siendo indispensable para interpretar adecuadamente los resultados y garantizar la validez y aplicabilidad del modelo en contextos reales.
@@ -201,7 +201,7 @@
       SlyderA(tipo="b" data-aos="zoom-in")
         .row.justify-content-center
           .col-lg-7.order-lg-1.order-2
-            h4  Recolección de datos (#[i Data Collection])
+            h4  Recolección de datos (#[i data collection])
             p Obtener información sobre el comportamiento y perfil de los aprendices. A continuación, se presentan las fuentes típicas:
             ul.lista-ul
               li
@@ -230,7 +230,7 @@
             img(src='@/assets/curso/temas/tema3/img20.png' alt="Imagen decorativa")
         .row.justify-content-center
           .col-lg-7.order-lg-1.order-2
-            h4  Ingesta y almacenamiento (#[i Data Ingestion & Storage])
+            h4  Ingesta y almacenamiento (#[i data ingestion & storage])
             p consolidar y almacenar los datos para su posterior análisis. A continuación, se presentan las herramientas:
             ul.lista-ul
               li
@@ -247,7 +247,7 @@
             img(src='@/assets/curso/temas/tema3/img21.png' alt="Imagen decorativa")
         .row.justify-content-center
           .col-lg-7.order-lg-1.order-2
-            h4  Limpieza de datos (#[i Data Cleaning])
+            h4  Limpieza de datos (#[i data cleaning])
             p Eliminar inconsistencias y preparar datos confiables. A continuación, se presentan los procesos clave:
             ul.lista-ul
               li
@@ -264,13 +264,13 @@
                 | Corrección de etiquetas o errores ortográficos.
               li
                 i.fas.fa-minus
-                | Identificación y manejo de outliers (por ejemplo, sesiones extremadamente largas).
+                p.mb-0 Identificación y manejo de #[i outliers] (por ejemplo, sesiones extremadamente largas).
 
           .col-lg-5.col-10.order-lg-2.order-1.mb-lg-0.mb-4
             img(src='@/assets/curso/temas/tema3/img22.png' alt="Imagen decorativa")
         .row.justify-content-center
           .col-lg-7.order-lg-1.order-2
-            h4  Integración de datos (#[i Data Integration])
+            h4  Integración de datos (#[i data integration])
             p Unir datos desde diversas fuentes. A continuación, se presentan las acciones típicas:
             ul.lista-ul
               li
@@ -287,7 +287,7 @@
             img(src='@/assets/curso/temas/tema3/img23.png' alt="Imagen decorativa")
         .row.justify-content-center
           .col-lg-7.order-lg-1.order-2
-            h4  Transformación y enriquecimiento #[i (Data Transformation & Enrichment)]
+            h4  Transformación y enriquecimiento #[i (data transformation & enrichment)]
             p Crear variables significativas para el modelo. A continuación, se presentan las variables derivadas útiles:
             ul.lista-ul
               li
@@ -313,7 +313,7 @@
             img(src='@/assets/curso/temas/tema3/img24.png' alt="Imagen decorativa")
         .row.justify-content-center
           .col-lg-7.order-lg-1.order-2
-            h4  Selección de características (#[i Feature Selection])
+            h4  Selección de características (#[i feature selection])
             p Identificar las variables más predictivas del abandono. A continuación, se presentan los métodos aplicados:
             ul.lista-ul
               li
@@ -324,7 +324,7 @@
                 | Pruebas estadísticas (Chi-cuadrado para variables categóricas).
               li
                 i.fas.fa-minus
-                | Importancia de variables mediante modelos de árbol ([i Random Forest o XGBoost]).
+                | Importancia de variables mediante modelos de árbol (Random Forest o XGBoost).
               li
                 i.fas.fa-minus
                 | Eliminación de variables redundantes o poco informativas.
@@ -333,7 +333,7 @@
             img(src='@/assets/curso/temas/tema3/img25.png' alt="Imagen decorativa")
         .row.justify-content-center
           .col-lg-7.order-lg-1.order-2
-            h4  División del dataset (#[i Train/Test Split])
+            h4  División del #[i dataset] (#[i train/test split])
             p Preparar los datos para el entrenamiento y validación del modelo. A continuación, se presentan las estrategias:
             ul.lista-ul
               li
@@ -358,10 +358,10 @@
                 | Regresión Logística (modelo base).
               li
                 i.fas.fa-minus
-                | #[I Random Forest].
+                | Random Forest.
               li
                 i.fas.fa-minus
-                | #[i Gradient Boosting (XGBoost y LightGBM)].
+                | Gradient Boosting (XGBoost y LightGBM).
               li
                 i.fas.fa-minus
                 | Redes neuronales simples (si existe suficiente volumen de datos).
@@ -370,21 +370,21 @@
             img(src='@/assets/curso/temas/tema3/img27.png' alt="Imagen decorativa")
         .row.justify-content-center
           .col-lg-7.order-lg-1.order-2
-            h4  Evaluación del modelo (#[i Model Evaluation])
+            h4  Evaluación del modelo (#[i model evaluation])
             p Verificar el desempeño predictivo del modelo. A continuación, se presentan las métricas clave:
             ul.lista-ul
               li
                 i.fas.fa-minus
-                | Accuracy: porcentaje de predicciones correctas.
+                p.mb-0 #[i Accuracy]: porcentaje de predicciones correctas.
               li
                 i.fas.fa-minus
-                | Precision: proporción de predicciones positivas correctas.
+                p.mb-0 #[i Precision]: proporción de predicciones positivas correctas.
               li
                 i.fas.fa-minus
-                | Recall: proporción de casos reales positivos correctamente detectados.
+                p.mb-0 #[i Recall]: proporción de casos reales positivos correctamente detectados.
               li
                 i.fas.fa-minus
-                | F1-Score: balance entre precisión y recall.
+                p.mb-0 F1-Score: balance entre precisión y #[i recall].
               li
                 i.fas.fa-minus
                 | ROC-AUC: capacidad del modelo para diferenciar entre abandono y no abandono (especialmente relevante cuando las clases están desbalanceadas).
@@ -404,7 +404,7 @@
                 | API REST con Flask o FastAPI para integración con el LMS.
               li
                 i.fas.fa-minus
-                | Dashboard de visualización (Power BI, Streamlit o Dash).
+                p.mb-0 #[i Dashboard] de visualización (Power BI, Streamlit o Dash).
               li
                 i.fas.fa-minus
                 | Automatización del reentrenamiento periódico (por cohorte o semestre).
@@ -413,7 +413,7 @@
                 | Generación de alertas automáticas para instructores.
               li
                 i.fas.fa-minus
-                | Monitoreo de drift de datos: detección de cambios en los patrones de los datos para actualizar el modelo cuando sea necesario.
+                p.mb-4 Monitoreo de #[i drift] de datos: detección de cambios en los patrones de los datos para actualizar el modelo cuando sea necesario.
 
           .col-lg-5.col-10.order-lg-2.order-1.mb-lg-0.mb-4
             img(src='@/assets/curso/temas/tema3/img29.png' alt="Imagen decorativa")

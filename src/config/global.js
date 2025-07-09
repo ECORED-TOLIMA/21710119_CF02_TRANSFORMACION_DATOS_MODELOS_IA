@@ -222,7 +222,7 @@ export default {
         'registros repetidos dentro de un conjunto de datos que deben identificarse y eliminarse para evitar distorsiones en el análisis.',
     },
     {
-      termino: 'ETL (<em>Extract, Transform, Load</em>):',
+      termino: 'ETL (Extract, Transform, Load)',
       significado:
         'proceso que consiste en extraer datos de diversas fuentes, transformarlos para análisis o modelado, y cargarlos en un sistema de almacenamiento.',
     },
@@ -356,12 +356,7 @@ export default {
         },
         {
           nombre: 'Veimar Celis Meléndez',
-          cargo: 'Desarrollador <em>Fullstack</em>',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
-        },
-        {
-          nombre: 'Diego Fernando Velasco Güiza',
-          cargo: 'Desarrollador <em>Fullstack</em>',
+          cargo: 'Desarrollador <em>full stack</em>',
           centro: 'Centro de Comercio y Servicios - Regional Tolima',
         },
         {

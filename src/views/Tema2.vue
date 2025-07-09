@@ -205,7 +205,7 @@
           .tarjeta.color-primario.tarjeta.color5.w-100
             .text-black.p-4
               h4.text-center Limpieza de datos (<em>data cleaning</em>)
-              p.text-center Consiste en corregir errores e inconsistencias antes de cargar los datos en un <em>Data Warehouse</em>. Esto incluye reestructurar esquemas, reformatear atributos, definir valores por defecto y unificar formatos de datos.
+              p.text-center Consiste en corregir errores e inconsistencias antes de cargar los datos en un <em>data warehouse</em>. Esto incluye reestructurar esquemas, reformatear atributos, definir valores por defecto y unificar formatos de datos.
       .col-lg-4.mb-4.col-md-6.col-sm-8.mb-4(data-aos="fade-left")
         .tarjeta-avatar.h-100
           img(src='@/assets/curso/temas/tema2/img17.svg' alt='AvatarTop')

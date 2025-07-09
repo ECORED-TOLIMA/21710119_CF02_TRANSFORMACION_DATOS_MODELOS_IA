@@ -18,11 +18,11 @@
             img(src='@/assets/curso/temas/tema1/img2.png', alt='Texto que describa la imagen')
         .col-lg-7
           .cajon.color-secundario.p-4.mb-4
-            p En el contexto del Big Data, donde el volumen y la variedad de los datos representan grandes desafíos, resulta esencial contar con métodos eficientes de limpieza. Un conjunto de datos bien depurado permite reducir el margen de error en los análisis y facilita la construcción de modelos predictivos más precisos.
+            p En el contexto del #[i big data], donde el volumen y la variedad de los datos representan grandes desafíos, resulta esencial contar con métodos eficientes de limpieza. Un conjunto de datos bien depurado permite reducir el margen de error en los análisis y facilita la construcción de modelos predictivos más precisos.
 
           p Las técnicas de limpieza y preparación de datos permiten transformar los datos en bruto en formatos adecuados para su análisis, modelado y descubrimiento de conocimiento (Pyle, 1999; Wang, 2017). Estas técnicas son clave para garantizar la calidad del proceso analítico, ya que ayudan a detectar y corregir errores estructurales, inconsistencias y redundancias.
 
-          p Una técnica ampliamente utilizada es la limpieza de datos o Data Cleaning, que abarca desde la identificación de valores faltantes o erróneos hasta la corrección o eliminación de registros redundantes, especialmente al integrar datos provenientes de múltiples fuentes. La supresión de datos duplicados y la estandarización de formatos, como la unificación de mayúsculas y minúsculas, son pasos comunes que contribuyen a la integridad del conjunto de datos.
+          p Una técnica ampliamente utilizada es la limpieza de datos o #[i data cleaning], que abarca desde la identificación de valores faltantes o erróneos hasta la corrección o eliminación de registros redundantes, especialmente al integrar datos provenientes de múltiples fuentes. La supresión de datos duplicados y la estandarización de formatos, como la unificación de mayúsculas y minúsculas, son pasos comunes que contribuyen a la integridad del conjunto de datos.
 
       p La correcta aplicación de estas técnicas no solo mejora la calidad de los datos, sino que también reduce sesgos potenciales, aumentando la precisión de los análisis posteriores y fortaleciendo la toma de decisiones basada en evidencia.
 
@@ -66,7 +66,7 @@
             figure
               img(src='@/assets/curso/temas/tema1/img4.svg', alt='Texto que describa la imagen')
           .col-lg-7
-            P Una metodología esencial es el Data Assay, descrita por Pyle (1999), que se enfoca en organizar los datos en un formato adecuado para minería y en evaluar su calidad. Sus objetivos principales son:
+            P Una metodología esencial es el #[i data assay], descrita por Pyle (1999), que se enfoca en organizar los datos en un formato adecuado para minería y en evaluar su calidad. Sus objetivos principales son:
             ul.lista-ul--color
               li
                 i.fas.fa-check
@@ -77,8 +77,8 @@
               li
                 i.fas.fa-check
                 | Estimar la independencia entre variables mediante la entropía.
-            p El Data Assay permite identificar si los datos cumplen su propósito, al tiempo que revela limitaciones y brechas en el conocimiento disponible.
-      p Otra metodología clave es el proceso de limpieza de datos o Data Cleaning, que se orienta a la corrección de errores y resolución de inconsistencias. Este proceso suele integrarse dentro del flujo ETL (extracción, transformación y carga), y se realiza comúnmente en un área de #[i staging].
+            p El #[i data assay] permite identificar si los datos cumplen su propósito, al tiempo que revela limitaciones y brechas en el conocimiento disponible.
+      p Otra metodología clave es el proceso de limpieza de datos o #[i data cleaning], que se orienta a la corrección de errores y resolución de inconsistencias. Este proceso suele integrarse dentro del flujo ETL (extracción, transformación y carga), y se realiza comúnmente en un área de #[i staging].
       p.mb-4 Las técnicas de limpieza pueden incluir:
       .row.justify-content-center.align-items-center.mb-4
         .col-lg-8.col-sm-8.movil(data-aos="zoom-in")
@@ -87,7 +87,7 @@
         .col-lg-8.col-md-6.col-sm-8.mb-4.desktop(data-aos="zoom-in")
           figure
             img(src='@/assets/curso/temas/tema1/img5.svg', alt='Texto que describa la imagen')
-      p.mb-4 En resumen, la implementación de metodologías como el Data Assay y el Data Cleaning, junto con la estandarización y validación de datos, conforma un enfoque integral para garantizar su calidad. Este enfoque es indispensable para obtener resultados confiables tanto en el análisis estadístico como en aplicaciones basadas en inteligencia artificial.
+      p.mb-4 En resumen, la implementación de metodologías como el #[i data assay] y el #[i data cleaning], junto con la estandarización y validación de datos, conforma un enfoque integral para garantizar su calidad. Este enfoque es indispensable para obtener resultados confiables tanto en el análisis estadístico como en aplicaciones basadas en inteligencia artificial.
 
       separador
       #t_1_2.titulo-segundo.color-acento-contenido(data-aos="flip-up")
@@ -149,7 +149,7 @@
                     p #[b Registros duplicados]: redundancia de información que puede afectar el análisis.
                     p #[b Otros]: valores fuera de rango, campos vacíos, formatos incorrectos.
                 tr
-                  td Problemas de múltiples fuentes (#[i Multi-Source Problems])	
+                  td Problemas de múltiples fuentes (Multi-Source Problems)	
                   td Se presentan al integrar datos de distintas fuentes, lo que introduce retos adicionales.	
                   td  
                     p Los modelos de datos pueden diferir en estructura y denominación:

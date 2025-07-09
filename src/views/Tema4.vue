@@ -11,7 +11,7 @@
         figure
           img(src='@/assets/curso/temas/tema4/img1.png', alt='Texto que describa la imagen')
       .col-lg-12(data-aos="flip-up")
-        p La automatización de modelos de inteligencia artificial busca reducir la intervención manual en las tareas de preparación, construcción, validación y despliegue de modelos predictivos. A través del uso de "[i pipelines] de datos y herramientas especializadas, se consigue acelerar el ciclo de vida de los proyectos de IA, mejorar la reproducibilidad de los resultados y facilitar la actualización continua de los modelos frente a nuevos datos. La automatización no solo optimiza los recursos humanos y computacionales, sino que también permite la detección temprana de desviaciones en el comportamiento del modelo, garantizando su vigencia en entornos dinámicos (Almeida, 2013).
+        p La automatización de modelos de inteligencia artificial busca reducir la intervención manual en las tareas de preparación, construcción, validación y despliegue de modelos predictivos. A través del uso de #[i pipelines] de datos y herramientas especializadas, se consigue acelerar el ciclo de vida de los proyectos de IA, mejorar la reproducibilidad de los resultados y facilitar la actualización continua de los modelos frente a nuevos datos. La automatización no solo optimiza los recursos humanos y computacionales, sino que también permite la detección temprana de desviaciones en el comportamiento del modelo, garantizando su vigencia en entornos dinámicos (Almeida, 2013).
         
     separador
     #t_4_1.titulo-segundo.color-acento-contenido(data-aos="flip-up")
@@ -33,7 +33,7 @@
               li 
                 .lista-ol--cuadro__vineta
                   span 3
-                | La generación automática de variables derivadas y enriquecimiento de los datasets.
+                p.mb-0 La generación automática de variables derivadas y enriquecimiento de los #[i datasets].
               li 
                 .lista-ol--cuadro__vineta
                   span 4
@@ -52,19 +52,19 @@
     AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta--azul").mb-5
       .row(titulo="Preparación y análisis de datos con Python y Jupyter Notebooks")
         .col-md-6.mb-4.mb-md-0
-          p Python, junto con bibliotecas como Pandas, se utiliza para automatizar la extracción y carga de datos desde fuentes diversas, como bases de datos, archivos CSV o APIs. Jupyter Notebooks proporciona un entorno interactivo para el análisis exploratorio de datos (EDA), donde se pueden desarrollar scripts reutilizables para tareas de limpieza, imputación de valores faltantes, eliminación de duplicados, transformación y codificación de variables. Esta etapa inicial, aunque puede incluir análisis manual, se automatiza mediante la generación de funciones que estandarizan el procesamiento de nuevos datos (Sahoo, 2019).
+          p Python, junto con bibliotecas como Pandas, se utiliza para automatizar la extracción y carga de datos desde fuentes diversas, como bases de datos, archivos CSV o APIs. Jupyter Notebooks proporciona un entorno interactivo para el análisis exploratorio de datos (EDA), donde se pueden desarrollar #[i scripts] reutilizables para tareas de limpieza, imputación de valores faltantes, eliminación de duplicados, transformación y codificación de variables. Esta etapa inicial, aunque puede incluir análisis manual, se automatiza mediante la generación de funciones que estandarizan el procesamiento de nuevos datos (Sahoo, 2019).
         .col-md-6
           figure
             img(src='@/assets/curso/temas/tema4/img2.png', alt='Texto que describa la imagen')
       .row(titulo="Modelado de inteligencia artificial con Python y Scikit-learn")
         .col-md-6.mb-4.mb-md-0
-          p Scikit-learn permite automatizar el entrenamiento de modelos mediante scripts que manejan la selección algorítmica, la división de datos en conjuntos de entrenamiento y prueba, y la capacitación del modelo. Herramientas como GridSearchCV o RandomizedSearchCV facilitan la búsqueda automatizada de los mejores hiperparámetros, optimizando así el rendimiento predictivo. Posteriormente, la evaluación del modelo se realiza de forma sistemática utilizando métricas predefinidas, y el modelo entrenado se guarda utilizando bibliotecas como Joblib o Pickle para su reutilización futura sin necesidad de reentrenamiento.
+          p Scikit-learn permite automatizar el entrenamiento de modelos mediante #[i scripts] que manejan la selección algorítmica, la división de datos en conjuntos de entrenamiento y prueba, y la capacitación del modelo. Herramientas como GridSearchCV o RandomizedSearchCV facilitan la búsqueda automatizada de los mejores hiperparámetros, optimizando así el rendimiento predictivo. Posteriormente, la evaluación del modelo se realiza de forma sistemática utilizando métricas predefinidas, y el modelo entrenado se guarda utilizando bibliotecas como Joblib o Pickle para su reutilización futura sin necesidad de reentrenamiento.
         .col-md-6
           figure
             img(src='@/assets/curso/temas/tema4/img3.png', alt='Texto que describa la imagen')
       .row(titulo="Visualización y presentación de resultados con Power BI")
         .col-md-6.mb-4.mb-md-0
-          p Power BI se integra como herramienta de visualización para automatizar la presentación de resultados. Puede conectarse a las fuentes donde se almacenan los datos procesados o las predicciones del modelo, permitiendo la creación de informes y dashboards que se actualizan automáticamente. Además, Power BI soporta la ejecución de scripts en Python, lo que amplía las capacidades de análisis y visualización avanzadas directamente dentro de los informes, asegurando la actualización continua de los resultados presentados.
+          p Power BI se integra como herramienta de visualización para automatizar la presentación de resultados. Puede conectarse a las fuentes donde se almacenan los datos procesados o las predicciones del modelo, permitiendo la creación de informes y dashboards que se actualizan automáticamente. Además, Power BI soporta la ejecución de #[i scripts] en Python, lo que amplía las capacidades de análisis y visualización avanzadas directamente dentro de los informes, asegurando la actualización continua de los resultados presentados.
         .col-md-6
           figure
             img(src='@/assets/curso/temas/tema4/img4.png', alt='Texto que describa la imagen')
