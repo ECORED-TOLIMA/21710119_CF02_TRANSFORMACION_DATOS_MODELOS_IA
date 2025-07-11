@@ -2,6 +2,8 @@ export default {
   global: {
     componenteFormativo:
       'Limpieza, transformación e integración de datos para modelos predictivos.',
+    Name:
+      'Limpieza, transformación e integración de datos para modelos predictivos.',
     descripcionCurso:
       'Este componente fortalece las competencias técnicas para analizar, validar y preparar datos, facilitando su conversión en conocimiento útil. Prepara a los aprendices para procesar información en entornos digitales dinámicos, con enfoque en su aplicación en modelos de Inteligencia Artificial (IA).',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
